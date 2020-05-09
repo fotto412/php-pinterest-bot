@@ -7,21 +7,19 @@ $blogUrl = 'http://awasome-blog-about-cats.com';
 $keywords = ['cats', 'kittens', 'funny cats', 'cat pictures', 'cats art'];
 
 $bot = PinterestBot::create();
+$bot->getHttpClient()->useProxy('127.0.0.1', '8118');
 
-//$bot->getHttpClient()->useProxy('127.0.0.1', '8118');
+$email = "imniwilliams24513@gmail.com";
+$pass = "imniwilliams24513";
 
-
-$email = 'junefawlar@pictsor.com';
-$pass = 'junefawlar';
-$bot->auth->register('deneme99992@pictsor.com', 'deneme99992', 'deneme5588');
-
-
-$bot->auth->login($email, $pass);
+$ok = $bot->auth->register($email, $pass, $pass);
+echo "ok:".$ok;
 
 if ($bot->user->isBanned()) {
     echo "Account has been banned!\n";
     die();
 }
+$bot->boards->create('TIPS','TIPS');
 
 // get board id
 $boards = $bot->boards->forUser($pass);

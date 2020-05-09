@@ -159,8 +159,10 @@ class Auth extends Provider
             return false;
         }
 
+       //$url = 'https://accounts.pinterest.com/v3/register/email/handshake/';
+        //if (!$this->post($url, $registrationForm->toArray())) {
         if (!$this->post(UrlBuilder::RESOURCE_CREATE_REGISTER, $registrationForm->toArray())) {
-            return false;
+                return false;
         }
 
         if (!$this->sendRegistrationActions()) {

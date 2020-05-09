@@ -1,0 +1,19 @@
+{
+  "options": {
+    "container": "home_page",
+    "email": "deneme2deneme2@gmail.com",
+    "password": "deneme2deneme2",
+    "age": "18",
+    "country": "CH",
+    "signupSource": "homePage",
+    "first_name": "Denemedeneme",
+    "last_name": "",
+    "hybridTier": "open",
+    "page": "home",
+    "recapToken": "03AGdBq24x6etOpijIjhkHp5lAll5ROgrCe_V0R01DtZP6WQTIAJ8HjKXu58oERJIFTw054Sh81Q3oCwInBXU4I59PBwm8XbPuDXwEcVbEjxEMSfQpSZzIIffV2lORv-abzTqhBXOIu9ckoMIRxVUxNsq3GIA-lCW6LY8it5_qUo38YSH8blJnKgnvxZTdJiN38FCyyK3fHscfFh7cUImIpMeJq0HYY1Ziou1MdUrACVI_QHk5TO6tH2KSOSISWikqJ7wuZyKK-_9WijPN2FJNuSe72Qn7OSmsFE7IWIMw041yltfIEVi-anvgfZyi1cgbDJb_CthKbVmhc8w54aOc497Q-vFuvZGK1wm5Diar5KsdUBnSspkp9GwEp65Ac-0FM9QNhI8V31TYtth5Z30xPVhfQbr-20AwUw",
+    "user_behavior_data": "{}"
+  },
+  "context": {}
+}
+
+source_url=&data=%7B%22options%22%3A%7B%22first_name%22%3A%22Imani+Williams%22%2C%22last_name%22%3A%22Deneme%22%2C%22email%22%3A%22imaniwilliams13402%40yandex.com%22%2C%22password%22%3A%22imaniwilliams13402%22%2C%22age%22%3A%2218%22%2C%22gender%22%3A%22male%22%2C%22country%22%3A%22GB%22%2C%22container%22%3A%22home_page%22%2C%22signupSource%22%3A%22homePage%22%2C%22page%22%3A%22home%22%2C%22recapToken%22%3A%2203AGdBq24x6etOpijIjhkHp5lAll5ROgrCe_V0R01DtZP6WQTIAJ8HjKXu58oERJIFTw054Sh81Q3oCwInBXU4I59PBwm8XbPuDXwEcVbEjxEMSfQpSZzIIffV2lORv%22%2C%22user_behavior_data%22%3A%5B%5D%7D%2C%22context%22%3A%7B%7D%7D

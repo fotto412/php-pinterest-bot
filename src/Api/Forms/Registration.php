@@ -135,14 +135,19 @@ class Registration extends Form
     {
         return [
             'first_name'    => $this->name,
+            'last_name'     => '',
             'email'         => $this->email,
             'password'      => $this->password,
             'age'           => $this->age,
-            'gender'        => $this->gender,
+            //'birthday'        => '168830336',
             'country'       => $this->country,
-            'site'          => $this->site,
+            'locale'          => 'en-US',
             'container'     => 'home_page',
-            'visited_pages' => [],
+            'signupSource'  => 'homePage',
+            'page'          => 'home',
+            'recapToken'          => '03AGdBq24x6etOpijIjhkHp5lAll5ROgrCe_V0R01DtZP6WQTIAJ8HjKXu58oERJIFTw054Sh81Q3oCwInBXU4I59PBwm8XbPuDXwEcVbEjxEMSfQpSZzIIffV2lORv',
+            'user_behavior_data' => '{}',
+            'context' => '{}'
         ];
     }
 
