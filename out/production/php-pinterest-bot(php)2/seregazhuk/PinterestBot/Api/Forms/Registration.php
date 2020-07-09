@@ -134,19 +134,20 @@ class Registration extends Form
     public function getData()
     {
         return [
-            'age'           => $this->age,
-            'business_name'    => $this->name,
-//            'last_name'     => '',
+            'first_name'    => $this->name,
+            'last_name'     => '',
             'email'         => $this->email,
             'password'      => $this->password,
+            'age'           => $this->age,
             //'birthday'        => '168830336',
-            'has_ads_credits'       => '',
-            'third_party_apps'          => null,
-//            'container'     => 'home_page',
-//            'signupSource'  => 'homePage',
-//            'page'          => 'home',
-            //'recapToken'          => '03AGdBq24x6etOpijIjhkHp5lAll5ROgrCe_V0R01DtZP6WQTIAJ8HjKXu58oERJIFTw054Sh81Q3oCwInBXU4I59PBwm8XbPuDXwEcVbEjxEMSfQpSZzIIffV2lORv',
+            'country'       => $this->country,
+            'locale'          => 'en-US',
+            'container'     => 'home_page',
+            'signupSource'  => 'homePage',
+            'page'          => 'home',
+            'recapToken'          => '03AGdBq24x6etOpijIjhkHp5lAll5ROgrCe_V0R01DtZP6WQTIAJ8HjKXu58oERJIFTw054Sh81Q3oCwInBXU4I59PBwm8XbPuDXwEcVbEjxEMSfQpSZzIIffV2lORv',
             'user_behavior_data' => '{}',
+            'context' => '{}'
         ];
     }
 

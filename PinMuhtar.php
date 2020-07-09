@@ -1,8 +1,7 @@
 <?php
 
-require 'php-pinterest-bot(php)2' . '/vendor/autoload.php';
+require __DIR__.'/vendor/autoload.php';
 
-require_once("HTTPStatus.php");
 
 use seregazhuk\PinterestBot\Factories\PinterestBot;
 use seregazhuk\PinterestBot\Rest\HTTPStatus;
@@ -42,9 +41,9 @@ switch($view){
             $status->setHttpHeaders('application/json', 300);
             echo "Account has been banned!\n";
             die();
-        }else{
-            $status->setHttpHeaders('application/json', 200);
-            echo "LOGIN SUCCESS";
+//        }else{
+//            $status->setHttpHeaders('application/json', 200);
+//            echo "LOGIN SUCCESS";
         }
         $boards = $bot->boards->forUser($pass);
         $boardId = $boards[0]['id'];
@@ -62,10 +61,12 @@ switch($view){
         $res=$bot->pins->create($image, $boardId, $keyword, $blogUrl);
         if ($res){
             $status->setHttpHeaders('application/json', 200);
-            echo "PINNING SUCCESS";
+            echo json_encode($res);
+            //echo $res;
         }else{
             $status->setHttpHeaders('application/json', 400);
-            echo "PINNING FAIL";
+            //echo $res;
+            echo "FAIL";
         }
 
         break;
